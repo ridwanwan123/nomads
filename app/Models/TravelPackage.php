@@ -14,8 +14,13 @@ class TravelPackage extends Model
 
     protected $guarded = ['id'];
 
+    // protected $fillable = [
+    //     'title', 'slug', 'location', 'about', 'featured_event', 'language',
+    //     'foods', 'departure_date', 'duration', 'type', 'price'
+    // ];
+
     protected $hidden = [
         
-    ];
+    ];  
 
 }

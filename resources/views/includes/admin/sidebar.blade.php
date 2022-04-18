@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
@@ -14,19 +14,19 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{ route('dashboard') }}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
     <!-- Nav Item - Paket Travel -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('') }}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-map-marked-alt"></i>
             <span>Paket Travel</span></a>
     </li>
     <!-- Nav Item - Galeri Travel -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('dashboard') }}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-image"></i>
             <span>Galeri Travel</span></a>
     </li>

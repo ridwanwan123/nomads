@@ -15,18 +15,19 @@ class IsAdmin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next, $guard = null)
+    public function handle(Request $request, Closure $next)
     {
-        // if(Auth::user() && Auth::user()->roles == 'ADMIN') {
-        //         return $next($request);
-        // }
-        // return redirect('/');
-
-        if (Auth::guard($guard)->check()) {
-           return redirect('/');
+        if (Auth::user() && Auth::user()->roles == 'ADMIN') {
+            return $next($request);
         }
+        return redirect('/');
+
+
+        // if (Auth::guard($guard)->check()) {
+        //    return redirect('/'); 
+        // }
         
-        return $next($request);
+        // return $next($request);
 
     }
 }
